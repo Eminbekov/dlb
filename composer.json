@@ -1,0 +1,5 @@
+{
+    "require": {
+        "formapro/telegram-bot": "^0.1.14"
+    }
+}
