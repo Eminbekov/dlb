@@ -1,0 +1,941 @@
+@import "colors";
+@mixin media {
+  @media (max-width: 768px) {
+    .absolute {
+      position: relative;
+    }
+
+    html, body {
+      overflow-x: hidden;
+    }
+
+    .container {
+      > .row {
+        margin: 0;
+      }
+    }
+
+    header {
+      nav {
+        .brand {
+          img {
+            height: auto;
+            width: 100%;
+          }
+        }
+        .telegram-icon {
+          a {
+            width: 100%;
+            height: 100%;
+            display: inline-block;
+
+            img {
+              width: 40px;
+              display: inline-block;
+              float: left;
+              margin-right: 10px;
+            }
+            p {
+              display: inline-block;
+              float: left;
+              margin: 0;
+              color: $darkBlue;
+              text-decoration: underline;
+              span {
+                color: $blue;
+              }
+            }
+          }
+        }
+      }
+      section.entrance {
+        background: url("../img/mob-header-bg.png") no-repeat right top;
+        background-size: 100%;
+        h1 {
+          font-size: 32px;
+          line-height: 42px;
+          margin-bottom: 20px;
+          margin-top: 40px;
+        }
+        .images {
+          position: relative;
+          min-height: 250px;
+          width: 100%;
+
+          img.male {
+            top: 0;
+            height: auto;
+            left: 0;
+            width: 55%;
+          }
+          img.female {
+            top: 34px;
+            height: auto;
+            right: 0;
+            width: 55%;
+          }
+          img.german {
+            top: 150px;
+            left: 0;
+            width: 70%;
+            height: auto;
+          }
+        }
+        .button-container {
+          width: 100%;
+          margin-bottom: 15px;
+          .animated-button {
+            width: 100%;
+          }
+        }
+        .video-player {
+          background: url("../img/mob-header.png") no-repeat left top;
+          background-size: 100%;
+          padding: 53px 32px;
+          p.par {
+            width: 100%;
+            height: auto;
+            font-family: Montserrat, serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 20px;
+            color: white;
+            text-transform: uppercase;
+            display: inline-flex;
+            margin-top: 10px;
+
+            img.play {
+              width: 80px;
+              height: 80px;
+              margin-right: 20px;
+              margin-top: -10px;
+              display: inline-block;
+            }
+          }
+        }
+      }
+    }
+    section.products {
+
+      h2.title {
+        width: 100%;
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 60px;
+        margin-bottom: 32px;
+      }
+      img.vector-right, img.vector-left {
+        display: none;
+      }
+      .big-ellipse {
+        display: none;
+      }
+      .little-ellipse {
+        display: none;
+      }
+
+      .col-sm-4.female {
+        text-align: center;
+        > img {
+          margin-left: 0;
+        }
+        h2 {
+          margin-top: 20px;
+          margin-bottom: 8px;
+        }
+
+        button.btn {
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
+      }
+
+      .col-sm-4.male {
+        text-align: center;
+        > img {
+          margin-left: 0;
+        }
+        h2 {
+          margin-top: 20px;
+          margin-bottom: 8px;
+        }
+
+        button.btn {
+          margin-top: 20px;
+          margin-bottom: 40px;
+        }
+        .yellow-round {
+          top: 100px;
+          right: 0;
+        }
+      }
+    }
+    section.doctor {
+      padding: 40px 0;
+
+      h2.header {
+        margin-bottom: 28px;
+        font-size: 28px;
+        line-height: 32px;
+      }
+      iframe {
+        min-height: 200px;
+      }
+    }
+    section.text {
+      padding: 32px 0;
+      h2 {
+        font-size: 24px;
+        line-height: 30px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 20px;
+      }
+
+      &::after {
+        bottom: 1px;
+      }
+    }
+    section.product-female {
+      background: #24aeea url("../img/woman-blue-mob.png") no-repeat right top;
+      .row {
+
+        h2.header {
+          margin-top: 0;
+          font-family: "Rounded Mplus 1c", serif;
+          font-style: normal;
+          font-weight: 800;
+          font-size: 28px;
+          line-height: 36px;
+          text-transform: uppercase;
+          text-align: left;
+        }
+        p.header {
+          font-family: Montserrat, serif;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 15px;
+          line-height: 24px;
+          text-align: left;
+        }
+
+        .col-sm-4.product {
+          margin-top: 92px;
+          position: relative;
+          margin-bottom: 24px;
+
+          img.product {
+            width: 250px;
+          }
+          img.play {
+            width: 80px;
+            height: 80px;
+            left: 220px;
+            top: 73px;
+            position: absolute;
+          }
+        }
+
+        p.header {
+          width: 100%;
+        }
+
+        .col-sm-8 {
+          .col-sm-6, .col-sm-6.pad {
+            padding: 0;
+          }
+        }
+
+        .container-with-book {
+          width: 100%;
+          .button-container {
+            width: 100%;
+            .animated-button {
+              width: 100%;
+              padding: 12px 24px 14px 115px;
+              span {
+                font-size: 15px;
+                line-height: 20px;
+              }
+            }
+          }
+          span.extra {
+            position: relative;
+            margin: 15px auto;
+          }
+        }
+      }
+    }
+    section.product-female-levels {
+      h2 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 40px;
+        margin-bottom: 20px;
+      }
+      .nav.nav-pills {
+        margin-bottom: 40px;
+        li {
+          margin: 10px 0;
+          width: 100%;
+          a {
+            width: 100%;
+          }
+        }
+      }
+
+      .tab-content {
+
+        .tab-pane {
+
+          .box {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            border-radius: 0;
+          }
+        }
+      }
+    }
+    section.product-female-components {
+      h2.header {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 40px;
+        margin-bottom: 8px;
+      }
+      p.header {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+
+      .col-sm-4.left {
+        padding: 0;
+        ul {
+          padding: 0;
+          li {
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+      }
+      .col-sm-4.right {
+        padding: 0;
+        ul {
+          padding: 0;
+          li {
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+      }
+      .col-sm-4 {
+        padding: 0;
+        .left, .right {
+          display: none;
+        }
+      }
+    }
+    section.feedback {
+      background: url(../img/feedback-mob.png) no-repeat right top;
+      .background {
+        padding: 40px 0;
+
+        .form-container {
+          padding: 0;
+        }
+
+        .box {
+          width: 100%;
+
+          .box-header {
+            width: 100%;
+            padding: 24px 24px 0;
+
+            h3 {
+              font-size: 20px;
+              line-height: 28px;
+              margin: 0 0 4px;
+            }
+            p {
+              font-size: 14px;
+              line-height: 20px;
+            }
+
+            &::after {
+              border-left: calc(92vw - (100vw / 2)) solid transparent;
+              border-right: calc(92vw - (100vw / 2)) solid transparent;
+              border-top: 24px solid #0999E5;
+              bottom: 1px;
+            }
+          }
+
+          form {
+            width: 100%;
+            padding: 32px 24px;
+
+            .container-with-img {
+              width: 100%;
+
+              img {
+                width: 80px;
+                bottom: 25px;
+                top: unset;
+              }
+              .button-container {
+                width: 100%;
+
+                .animated-button {
+                  padding: 20px 63px 20px 20px;
+                  width: 100%;
+                  font-size: 15px;
+                  line-height: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+      h2.header {
+        font-size: 28px;
+        line-height: 36px;
+      }
+      .background {
+        img.products {
+          width: 100%;
+        }
+      }
+    }
+    section.product-male {
+      background-size: cover;
+      .background {
+        background-position: left top;
+        padding-top: 150px;
+
+        .col-xs-12 {
+          padding: 0;
+          h2.header {
+            font-size: 28px;
+            line-height: 36px;
+            text-align: left;
+          }
+          p.header {
+            text-align: left;
+            font-size: 15px;
+            line-height: 24px;
+          }
+
+          .container-with-book {
+            width: 100%;
+            text-align: center;
+            img {
+              width: 120px;
+              left: -15px;
+              top: -5px;
+            }
+
+            .button-container {
+              width: 100%;
+
+              .animated-button {
+                width: 100%;
+                padding: 12px 24px 12px 118px;
+
+                span {
+                  font-size: 15px;
+                  line-height: 20px;
+                }
+              }
+            }
+          }
+
+        }
+
+        img.product {
+          width: 100%;
+          margin: 0;
+        }
+        .container-with-book {
+
+          span.extra {
+            width: 100%;
+            margin: 15px auto;
+            position: relative;
+          }
+        }
+      }
+    }
+    section.product-male-advantages {
+      h2 {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+      }
+      .col-sm-4 {
+        padding: 0;
+      }
+      .left {
+        p:last-child::after {
+          content: "2";
+        }
+      }
+      .right {
+        p:first-child::after {
+          content: "3";
+        }
+      }
+      .left, .right {
+        margin: 0;
+
+        p {
+          text-align: left;
+          padding-left: 36px;
+          position: relative;
+          font-size: 15px;
+          line-height: 24px;
+          margin-bottom: 20px;
+
+          &::after {
+            left: 0;
+            top: 0;
+            font-size: 24px;
+            line-height: 24px;
+            color: $lightGrey;
+          }
+        }
+      }
+    }
+    section.product-male-info {
+      .container {
+        padding: 0;
+
+        .row {
+          background-image: url("../img/sperm-mob.png");
+          background-size: cover;
+          border-radius: 0;
+          padding: 40px 15px;
+
+          h2 {
+            font-size: 24px;
+            line-height: 30px;
+          }
+          p{
+            font-size: 14px;
+            line-height: 20px;
+          }
+        }
+      }
+
+    }
+    section.product-male-components {
+      h2.header {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 40px;
+        margin-bottom: 8px;
+      }
+      p.header {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 20px;
+      }
+
+      .col-sm-4.left {
+        padding: 0;
+        ul {
+          padding: 0;
+          li {
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+      }
+      .col-sm-4.right {
+        padding: 0;
+        ul {
+          padding: 0;
+          li {
+            text-align: left;
+          }
+          p {
+            text-align: left;
+          }
+        }
+      }
+      .col-sm-4 {
+        padding: 0;
+        .left, .right {
+          display: none;
+        }
+      }
+    }
+    section.order {
+      .background {
+        background: none;
+
+        .container {
+          padding: 0;
+        }
+        h2 {
+          font-size: 28px;
+          line-height: 36px;
+        }
+
+        .nav.nav-pills {
+          margin-bottom: 0;
+          padding: 0 15px;
+          li {
+            margin: 10px 0;
+            width: 100%;
+            a {
+              width: 100%;
+            }
+          }
+        }
+
+        .tab-content {
+          background: url(../img/ginekolog-mob.png) no-repeat right top;
+          background-size: 100%;
+          padding: 0 15px;
+          .tab-pane {
+            padding-top: 364px;
+            position: relative;
+            img.product {
+              width: 150px;
+              right: -50px;
+              position: absolute;
+              top: 315px;
+            }
+            .plus {
+              position: absolute;
+              top: 200px;
+              left: 75%;
+              transform: translate(-50%,100%);
+              border-radius: 50%;
+            }
+            .box {
+              width: 100%;
+              margin: 0;
+              padding: 32px 24px;
+
+              form {
+                h3 {
+                  font-size: 20px;
+                  line-height: 28px;
+                  margin: 0 0 8px;
+                }
+                p {
+                  margin-bottom: 20px;
+                  font-size: 14px;
+                  line-height: 20px;
+                }
+                .button-container {
+                  width: calc(100% + 7px);
+                  margin-left: -7px;
+                  .animated-button {
+                    padding: 22px 46px;
+                    span {
+                      font-size: 17px;
+                      line-height: 20px;
+                    }
+                  }
+                }
+              }
+            }
+            .box-mini {
+              position: relative;
+              bottom: unset;
+              left: unset;
+              width: 75%;
+              z-index: 9;
+              margin-bottom: 34px;
+            }
+          }
+        }
+      }
+    }
+    section.product-male-components {
+      padding-bottom: 40px;
+      .col-sm-4 {
+        .right, .left {
+          display: none;
+        }
+
+      }
+    }
+    section.how-we-work {
+      padding-bottom: 0;
+      h2.header {
+        font-size: 28px;
+        line-height: 36px;
+        margin-top: 40px;
+        margin-bottom: 24px;
+      }
+      .col-sm-3.col-xs-12 {
+        margin-bottom: 32px;
+        padding: 0 60px;
+        img {
+          width: 128px;
+          margin-bottom: 12px;
+        }
+        h4 {
+          font-size: 16px;
+          line-height: 22px;
+          margin: 0 0 4px;
+        }
+        p {
+          font-size: 14px;
+          line-height: 20px;
+          color: $grey;
+          margin-bottom: 0;
+        }
+        &::after {
+          display: none;
+        }
+      }
+    }
+    section.free-delivery {
+      padding-top: 40px;
+      padding-bottom: 20px;
+
+      h2.header {
+        font-size: 32px;
+        line-height: 40px;
+      }
+      ul {
+        width: 100%;
+        li {
+          background-size: 48px;
+          font-size: 15px;
+          line-height: 24px;
+          padding-left: 64px;
+          margin-bottom: 16px;
+        }
+      }
+
+      img.car {
+        position: relative;
+        width: 130%;
+        margin-left: 20px;
+        bottom: unset;
+      }
+    }
+    section.questions {
+      h2.header {
+        font-weight: normal;
+        font-size: 28px;
+        line-height: 36px;
+      }
+      p.header {
+        font-size: 15px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+      form {
+        .animated-button {
+          span {
+            font-size: 15px;
+            line-height: 20px;
+          }
+        }
+        p.bottom {
+          margin-bottom: 32px;
+        }
+      }
+      .box {
+        padding: 24px 20px;
+        h2.header {
+          font-weight: bold;
+          font-size: 24px;
+          line-height: 32px;
+          text-align: center;
+          letter-spacing: 0.04em;
+          margin: 0 0 8px;
+        }
+        p.header {
+          font-size: 14px;
+          line-height: 20px;
+          margin-bottom: 16px;
+        }
+        p {
+          margin-bottom: 0;
+        }
+      }
+    }
+    section.company {
+      .logo-doraline {
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        background: white;
+        border-radius: 12px;
+        padding: 24px 32px 24px 14px;
+        height: auto;
+        width: 75%;
+        margin-bottom: 24px;
+      }
+      .inline {
+        margin: 0;
+        padding-bottom: 0;
+      }
+      hr {
+        border: 1px solid #DFE4E9;
+        box-shadow: 1px 0 0 #FFFFFF;
+      }
+      .inline.bordered {
+        margin-left: 0;
+        border: 0;
+        padding: 0 0 0 5px;
+
+        p{
+          font-size: 18px;
+          line-height: 24px;
+        }
+      }
+    }
+    section.sertificated{
+      padding: 40px 0;
+
+      h2.header {
+        margin-bottom: 20px;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+    section.partners {
+      padding: 40px 0;
+
+      .col-sm-4.first {
+        height: auto;
+        padding: 0;
+        text-align: center;
+        margin-bottom: 24px;
+
+        p {
+          font-weight: 600;
+          font-size: 20px;
+          line-height: 26px;
+          letter-spacing: 0.12em;
+        }
+      }
+      .col-sm-4 {
+        height: 120px;
+        padding: 0;
+
+        &:nth-child(2) {
+          margin-bottom: 12px;
+        }
+
+        .second {
+          padding: 21px 30px;
+        }
+        .third {
+          padding: 5px 14px;
+        }
+      }
+    }
+    footer {
+      padding: 40px 0 24px;
+
+      img.logo {
+        height: auto;
+        width: 75%;
+        float: none;
+        margin: 0 0 20px;
+      }
+      .inline {
+        margin: 0;
+      }
+      .inline.first {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 20px;
+      }
+      .inline.second {
+        margin-top: 4px;
+        font-size: 12px;
+        line-height: 16px;
+      }
+      .social {
+        a {
+          display: inline-block;
+          margin-right: 16px;
+          img {
+            width: 40px;
+          }
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+      img.astraia {
+        width: 56px;
+        margin: 24px 0 0;
+      }
+    }
+
+    #pdf, #video, #order, #doctor {
+      width: 100%;
+      .modal-dialog {
+        width: 95%;
+        .modal-content {
+          height: auto;
+        }
+      }
+    }
+
+    #video, #doctor {
+      button.close {
+        right: 12px;
+        top: 12px;
+        font-size: 32px;
+      }
+      .modal-dialog {
+        .modal-content {
+          iframe {
+            width: 100%;
+            height: auto;
+          }
+        }
+      }
+    }
+
+    .modal {
+      .modal-dialog {
+        .modal-content {
+          button.close {
+            right: 12px;
+            top: 12px;
+            font-size: 35px;
+          }
+        }
+      }
+
+      .info {
+        padding: 15px;
+      }
+
+      .form {
+        padding: 0 15px;
+
+        form {
+          h3 {
+            margin-top: 20px;
+          }
+        }
+      }
+    }
+  }
+}

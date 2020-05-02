@@ -1,0 +1,18 @@
+@keyframes buttonAnimation {
+  0% {
+    opacity: 1;
+    left: -30%;
+  }
+  35% {
+    left: 130%;
+    opacity: 1;
+  }
+  36%{
+    opacity: 0;
+    left: 130%;
+  }
+  100% {
+    left: -30%;
+    opacity: 0;
+  }
+}
